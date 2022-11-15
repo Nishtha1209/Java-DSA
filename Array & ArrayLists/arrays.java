@@ -1,7 +1,9 @@
 package com.company;
+import java.util.Scanner;
 
 public class arrays {
     public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
         //int []marks = new int[5];
 //        marks[0]=100;
 //        marks[1]=90;
@@ -29,5 +31,10 @@ public class arrays {
         for (int element : marks){
             System.out.println(element);
         }
+        
+       //Input array using for loop
+       for(int i = 0; i<marks.length; i++){
+           marks[i] = sc.nextInt();
+       }
     }
 }
