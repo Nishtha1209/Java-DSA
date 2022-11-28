@@ -1,1 +1,2 @@
 https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+//Apply binary search twice. to find the first occurence and last occurence
