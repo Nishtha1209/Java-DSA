@@ -1,0 +1,17 @@
+//print n to 1 numbers
+//example: f(5)=5,4,3,2,1
+
+package com.company;
+
+public class N_to_1 {
+    public static void main(String[] args){
+        function(5);
+    }
+    static void function(int n){
+        if(n==0){
+            return;
+        }
+        System.out.println(n);
+        function(n-1);
+    }
+}
