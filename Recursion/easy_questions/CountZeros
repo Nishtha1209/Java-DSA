@@ -1,0 +1,22 @@
+package com.company;
+
+public class count_zeros {
+    public static void main(String[] args){
+        System.out.println(countZeros(304050));
+    }
+    static int countZeros(int n){
+        return helper(n, 0);
+    }
+    static int helper(int n, int count){
+        int rem = n%10;
+        if(n==0){ //when number is 0 i.e all digits are checked it will return the count calculated in recursive calls.
+            return count;
+        }
+        if(rem==0){
+            return helper(n/10, count+1);
+        }
+        else{
+            return helper(n/10, count);
+        }
+    }
+}
