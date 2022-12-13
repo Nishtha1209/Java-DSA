@@ -11,7 +11,7 @@ public class LSmultipleOccurences {
     }
     static ArrayList<Integer> list = new ArrayList<Integer>();
     static void search(int [] arr, int target, int index){
-        if(arr[index]==arr.length){
+        if(index==arr.length){
             return;
         }
         if(arr[index]==target){
