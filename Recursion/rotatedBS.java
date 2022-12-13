@@ -23,6 +23,6 @@ public class rotatedBS {
         if(target>=arr[mid] && target<=arr[end]){
             return search(arr,target,mid+1,end);
         }
-        return search(arr,target,start,mid-1);
+        return search(arr,target,start,mid-1);   //if both 0f the above conditions are false then search in the remaining array i.e. lest part of the middle element
     }
 }
