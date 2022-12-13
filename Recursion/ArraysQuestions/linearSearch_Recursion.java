@@ -10,7 +10,7 @@ public class linearSearch_Recursion {
     }
     //OPTIMIZED SOLUTION
     static boolean linear(int[] arr, int target, int index){
-        if(arr[index]==arr.length || arr[index]!=target){
+        if(index==arr.length){
             return false;
         }
         return arr[index]==target || linear(arr,target,index+1);
