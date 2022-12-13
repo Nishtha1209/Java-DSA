@@ -1,0 +1,32 @@
+package com.company;
+
+public class StarPattern_recursion {
+    public static void main(String[] args){
+//        pattern(4,0);
+        patternRev(4,0);
+    }
+    static void pattern(int row, int column){
+        if(row==0){
+            return;
+        }
+        if(column<row){
+            System.out.print("*");
+            pattern(row, column+1);
+        } else{
+            System.out.println();
+            pattern(row-1, 0);
+        }
+    }
+    static void patternRev(int row, int column){
+        if(row==0){
+            return;
+        }
+        if(column<row){
+            patternRev(row, column+1);
+            System.out.print("*");
+        } else{
+            patternRev(row-1,0);
+            System.out.println();
+        }
+    }
+}
