@@ -1,0 +1,50 @@
+package com.company;
+import java.lang.String;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class stringProperties {
+    public static void main(String[] args) {
+        String name = "Nishtha Kaigaonkar";
+//        System.out.println(name) ;
+        String a = "hello";
+        System.out.println(a);
+        a = "world";
+        System.out.println(a);
+
+        //comparison
+        String c = "nishtha";
+        String d = "nishtha";
+        System.out.println(c == d);
+
+        String book1 = new String("Book");
+        String book2  = new String("Book");
+        System.out.println(book1 == book2);
+
+        //checking the values only
+        System.out.println(book1.equals(book2));
+
+        //getting character
+        System.out.println(book1.charAt(2 ));
+
+        //PRETTY PRINTING/FORMATTING THE OUTPUT
+        float z = 456.7899f;
+        System.out.printf("The formatted number is %.2f ", z);  //print till 2 decimals only
+        System.out.println();
+        System.out.printf("PIE: %.3f ", Math.PI);
+        System.out.println();
+        System.out.printf("Hello my name is %s and I am a %s", "Nishtha", "Student");  //many more placeholders in java
+
+        //CONCATENATION
+        System.out.println('a'+'b');
+        System.out.println("a"+"b");
+        System.out.println((char)('a'+3));
+        System.out.println("a"+1); //integer will be converted to Integer(Wrapper class) that will call .toString() method. ==sout("a"+"1");
+
+        System.out.println("Nishtha" + new ArrayList<>());
+//        String ans = new Integer(56) + " " + new ArrayList<>();
+//        System.out.println(ans);
+
+
+    }
+}
