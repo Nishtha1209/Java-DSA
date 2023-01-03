@@ -1,2 +1,2 @@
 # Java-DSA
-Questions and solutions for dsa and java
+Questions and solutions for DSA and Java
