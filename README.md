@@ -1,2 +1,2 @@
 # Java-DSA
-Questions and Solutions for DSA and Java
+Questions and Solutions for Data Structures and Algorithms in Java
