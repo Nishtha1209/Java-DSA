@@ -1,0 +1,17 @@
+package com.company;
+
+import java.util.Stack;
+
+public class StacksInbuilt {
+    public static void main(String[] args) {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(23);
+        stack.push(42);
+        stack.push(11);
+        stack.push(27);
+        stack.push(76);
+        System.out.println(stack);
+        System.out.println(stack.pop());
+        System.out.println(stack);
+    }
+}
