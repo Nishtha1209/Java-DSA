@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/concatenation-of-array/
-class Solution {
+class Solution { //[1,2,1,1,2,1]
     public int[] getConcatenation(int[] nums) {
         
         int n = nums.length;
