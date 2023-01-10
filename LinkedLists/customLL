@@ -1,0 +1,30 @@
+package com.company;
+
+import java.util.LinkedList;
+
+public class customLinkedList {
+        //INBUILT
+//        LinkedList<Integer> list = new LinkedList<>();
+//        list.add(34);}
+    private Node head;
+    private Node tail;
+
+    private int size;
+
+    public customLinkedList(){
+        this.size = 0;
+    }
+    private class Node{
+        private int value;
+        private Node next;
+
+        public Node(int value){
+            this.value = value;
+        }
+
+        public Node(int value, Node next){
+            this.value = value;
+            this.next = next;
+        }
+    }
+}
