@@ -14,6 +14,18 @@ public class customLinkedList {
     public customLinkedList(){
         this.size = 0;
     }
+    
+    public void insertFirst(int val){
+    Node node = new Node(val);
+        node.next = head;
+        head = node; //since this is the first element and first element is the head
+
+        if(tail == null){
+            tail = head;
+        }
+        size+=1;
+    }
+    
     private class Node{
         private int value;
         private Node next;
