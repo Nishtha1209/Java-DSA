@@ -64,7 +64,14 @@ public class customLinkedList {
         size--;
         return val;
     }
-
+    
+    public Node get(int index){ //when you feed a number it will return reference pointer to that node
+        Node node = head;
+        for (int i = 0; i < index; i++) {
+            node = node.next;
+        }
+        return node;
+    }
     
      public void display(){
         Node temp = head;
