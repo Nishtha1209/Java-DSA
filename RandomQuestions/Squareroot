@@ -5,6 +5,9 @@ class Solution {
         double t;
         double sqrt = x/2;
         do{
+            if(x<2){
+                return x;
+            }
             t = sqrt;
             sqrt = (t+(x/t))/2;
         }
@@ -12,4 +15,4 @@ class Solution {
         return (int)(sqrt);
     }
 }
-//TIME COMPLEXITY CONSTRAINTS-- NOT AN OPTIMAL SOLUTION
+
