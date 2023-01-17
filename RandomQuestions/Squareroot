@@ -12,3 +12,4 @@ class Solution {
         return (int)(sqrt);
     }
 }
+//TIME COMPLEXITY CONSTRAINTS-- NOT AN OPTIMAL SOLUTION
