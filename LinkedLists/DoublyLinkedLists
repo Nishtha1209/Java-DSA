@@ -17,9 +17,11 @@ public class DoublyLL {
 
     public void display(){
         Node node = head;
+        Node last = null;
         while(node != null){
             System.out.print(node.val+" -> ");
             node = node.next;
+            last = node;
         }
         System.out.println("END");
     }
