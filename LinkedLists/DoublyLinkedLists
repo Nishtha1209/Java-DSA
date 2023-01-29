@@ -17,7 +17,7 @@ public class DoublyLL {
 
     public void display(){
         Node node = head;
-        Node last = null;
+        Node last = null; //Last node is same as tail;
         while(node != null){
             System.out.print(node.val+" -> ");
             node = node.next;
