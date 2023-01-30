@@ -6,7 +6,7 @@ public class DoublyLL {
     private Node head;
     
     public void insertFirst(int val){
-        Node node = new Node(val); //by default will have null value
+        Node node = new Node(val); 
         node.next = head;
         node.prev = null;
         if(head!= null){
