@@ -21,6 +21,15 @@ public class circularLL {
         tail = node;
     }
     
+    public void display(){
+        Node node = head;
+        if(head!=null){
+            do{
+                System.out.println(node.val+" -> ");
+            } while(node!=head);
+        }
+    }
+    
     private class Node{
         int val;
         Node next;
