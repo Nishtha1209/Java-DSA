@@ -59,6 +59,21 @@ public class DoublyLL {
         }
         return null;
     }
+    
+    public void insert(int after, int val){
+        Node p = find(after);
+        if(p == null){
+            System.out.println("Does not exist");
+            return;
+        }
+        Node node = new Node(val);
+        node.next = p.next;
+        p.next = node;
+        node.prev = p;
+        if(node.next != null){
+            node.next.prev = node;
+        }
+    }
 
     private class Node{
         int val;
