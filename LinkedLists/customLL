@@ -59,6 +59,9 @@ public class customLinkedList {
     public void insertRec(int val, int index){
           
     }
+    private Node insertRec(int val, int index, Node node){
+        
+    }
     
     public int deleteFirst(){
         int val = head.value;
