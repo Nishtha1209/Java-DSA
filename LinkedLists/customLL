@@ -55,6 +55,11 @@ public class customLinkedList {
         size++;
     }
     
+    //Insert using recursion
+    public void insertRec(int val, int index){
+          
+    }
+    
     public int deleteFirst(){
         int val = head.value;
         head = head.next;
