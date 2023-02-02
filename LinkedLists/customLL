@@ -55,8 +55,10 @@ public class customLinkedList {
         size++;
     }
     
+    
+    
     public void insertRec(int val, int index){
-        head = insertRec(val, index, head);
+        head = insertRec(val, index, head);                       //REVIEW IT
     }
     private Node insertRec(int val, int index, Node node){
         if (index == 0) {
@@ -77,6 +79,8 @@ public class customLinkedList {
         size--;
         return val;
     }
+    
+    
     
     public int deleteLast(){
         if(size<=1){
