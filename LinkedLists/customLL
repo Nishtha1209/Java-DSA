@@ -76,7 +76,7 @@ public class customLinkedList {
         if(head == null){
             tail = null;
         }
-        size--;
+        size--;                                                //ONCE AGAIN
         return val;
     }
     
