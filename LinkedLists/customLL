@@ -56,11 +56,11 @@ public class customLinkedList {
     }
     
     //insert using Recursion
-    public void insertRec(int val, int index) {    //put index number where you want to insert
-        head = insertRec(val, index, head);
+    public void insertRec(int val, int index) {    //put index number where you want to insert 
+        head = insertRec(val, index, head);              
     }
     private Node insertRec(int val, int index, Node node) {
-        if (index == 0) {
+        if (index == 0) {                                 // number of steps to rech that index
             Node temp = new Node(val, node);
             size++;
             return temp;
