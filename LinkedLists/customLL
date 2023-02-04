@@ -129,11 +129,14 @@ public class customLinkedList {
             }
         }
         while(f !=null){
-
+            ans.insertLast(f.value);
+            f = f.next;
         }
         while(s != null){
-            
+            ans.insertLast(s.value);
+            s = s.next;
         }
+        return ans;
     }
     
     public Node get(int index){   //consider it as getting element at that index 
