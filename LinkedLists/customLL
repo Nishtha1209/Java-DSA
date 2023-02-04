@@ -112,6 +112,8 @@ public class customLinkedList {
         return node;
     }
     
+    //merge
+    
     public Node get(int index){   //consider it as getting element at that index 
         Node node = head;
         for (int i = 0; i < index; i++) {
