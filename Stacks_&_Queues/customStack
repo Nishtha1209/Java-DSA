@@ -20,9 +20,9 @@ public class customStack {
         data[ptr]=item;
         return true;
     }
-    public int pop() throws Exception{
+    public int pop() throws stackException{
         if(isEmpty()){
-            throw new Exception("Cannot pop from an empty stack!");
+            throw new stackException("Cannot pop from an empty stack!");
         }
 //        int removed = data[ptr;
 //        ptr--;
