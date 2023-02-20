@@ -6,6 +6,9 @@ public class customQueue {
 
     int end = 0; //end is pointer pointing towards end
 
+    public customQueue(){
+        this(DEFAULT_SIZE);
+    }
     public customQueue(int size){
         this.data = new int[size];
     }
