@@ -4,7 +4,7 @@ public class circularQueue {
     protected int[] data;
     private static final int DEFAULT_SIZE=10;
 
-    protected int end = 0; //end is pointer pointing towards end
+    protected int end = 0; //end is pointer pointing to end
     protected int front = 0;
     private int size = 0;
 
