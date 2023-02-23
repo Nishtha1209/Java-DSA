@@ -1,7 +1,7 @@
 package com.company;
 import java.util.Stack;
 
-class QueueUsingStack{   //INSERT EFFICIENT
+class QueueUsingStack{   
     private Stack<Integer> first;
     private Stack<Integer> second;
 
