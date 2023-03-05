@@ -2,7 +2,7 @@ package com.company;
 
 public class DynamicStack extends customStack{
     public DynamicStack(){
-        super(); 
+        super(); //it will call customStack()
     }
     public DynamicStack(int size){
         super(size);
