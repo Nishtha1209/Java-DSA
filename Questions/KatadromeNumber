@@ -1,0 +1,33 @@
+//Katadrome Number - A number whose digits are in decreasing order;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class katadromeNumber {
+    public static boolean isKatadrome(int num){
+        int x = num;
+        ArrayList<Integer> list = new ArrayList<>();
+         while(x/10>0){
+             int rem = (x%10);
+             list.add(rem);
+             x=x/10;
+         }
+         for(int i=0; i< list.size(); i++){
+             if(list.get(i) <list.get(i+1)){
+                 return true;
+             }
+             else if(list.get(i)>list.get(i+1)){
+                 break;
+
+             }
+         }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number: ");
+        int num = sc.nextInt();
+        System.out.println(isKatadrome(num));
+    }
+}
