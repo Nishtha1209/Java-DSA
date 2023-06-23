@@ -1,0 +1,15 @@
+//https://leetcode.com/problems/remove-trailing-zeros-from-a-string/description/
+
+class Solution {
+    public String removeTrailingZeros(String num) {
+        int n = num.length()-1;
+        for(int i=n; i>0; i--){
+            if(num.charAt(i)!='0'){
+                break;
+            }
+            n--;
+            
+        }
+        return num.substring(0, n+1);
+    }
+}
