@@ -67,6 +67,17 @@ public class BinaryTree {
         }
         prettyDisplay(node.left, level+1);
     }
+     public void preOrder(){
+        preOrder(root);
+    }
+    private void preOrder(Node node){
+        if(node==null){
+            return;
+        }
+        System.out.println(node.value+" ");
+        preOrder(node.left);
+        preOrder(node.right);
+    }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
