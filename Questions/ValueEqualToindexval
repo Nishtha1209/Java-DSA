@@ -1,0 +1,16 @@
+//https://practice.geeksforgeeks.org/problems/value-equal-to-index-value1330/1?page=1&sprint=94ade6723438d94ecf0c00c3937dad55&sortBy=submissions
+
+class Solution {
+    ArrayList<Integer> valueEqualToIndex(int arr[], int n) {
+        
+        ArrayList<Integer> list = new ArrayList<>();
+        
+        for(int i=0; i<arr.length; i++){
+            if(arr[i]==i+1){
+                list.add(i+1);
+            }
+            
+        }
+        return list;
+    }
+}
