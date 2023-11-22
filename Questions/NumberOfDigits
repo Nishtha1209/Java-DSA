@@ -1,0 +1,13 @@
+//https://www.codingninjas.com/studio/problems/number-of-digits_9173
+
+public class Solution {
+    public static int countDigits(int n){
+        // Write your code here.
+        //approach1
+        String ans = Integer.toString(n);
+        return ans.length();
+
+        //approach2
+        
+    }
+}
