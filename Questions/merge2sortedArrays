@@ -1,0 +1,19 @@
+//https://www.codingninjas.com/studio/problems/ninja-and-sorted-arrays_1214628?topList=striver-sde-sheet-problems&leftPanelTabValue=PROBLEM
+
+import java.io.*;
+import java.util.* ;
+
+public class Solution {
+    public static int[] ninjaAndSortedArrays(int arr1[], int arr2[], int m, int n) {
+        // Write your code here.
+        int ans[]= new int[m+n];
+        for(int i=0; i<m; i++){
+            ans[i] = arr1[i];
+        }
+        for(int i=0; i<n; i++){
+            ans[m+i] = arr2[i];
+        }
+        Arrays.sort(ans);
+        return ans;
+    }
+}
