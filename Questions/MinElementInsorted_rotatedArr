@@ -1,0 +1,16 @@
+//https://practice.geeksforgeeks.org/problems/minimum-element-in-a-sorted-and-rotated-array3611/0
+
+class Solution
+{
+    int findMin(int arr[], int n)
+    {
+        //complete the function here
+        int min = arr[0];
+        for(int i=1; i<n; i++){
+            if(arr[i]<min){
+                min=arr[i];
+            }
+        }
+        return min;
+    }
+}
